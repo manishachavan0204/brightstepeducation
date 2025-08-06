@@ -1,0 +1,405 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Base Styles */
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+
+/* Hero Section Gradient */
+.hero-gradient { 
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%); 
+}
+
+/* Card Hover Effects */
+.card-hover { 
+    transition: all 0.3s ease; 
+}
+
+.card-hover:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15); 
+}
+
+/* Text Gradient Effect */
+.text-gradient { 
+    background: linear-gradient(135deg, #1e40af, #3b82f6); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+/* Floating Animation */
+.animate-float { 
+    animation: float 6s ease-in-out infinite; 
+}
+
+@keyframes float { 
+    0%, 100% { 
+        transform: translateY(0px); 
+    } 
+    50% { 
+        transform: translateY(-20px); 
+    } 
+}
+
+/* Glass Effect */
+.glass-effect { 
+    backdrop-filter: blur(10px); 
+    background: rgba(255, 255, 255, 0.1); 
+}
+
+/* Gradient Border Effect */
+.gradient-border { 
+    background: linear-gradient(45deg, #3b82f6, #8b5cf6, #06b6d4); 
+    padding: 2px; 
+    border-radius: 16px; 
+}
+
+.gradient-border-inner { 
+    background: white; 
+    border-radius: 14px; 
+}
+
+/* Professional Shadow */
+.professional-shadow { 
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+}
+
+/* Modal Styles */
+.modal { 
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.modal-content { 
+    background-color: white; 
+    margin: 5% auto; 
+    padding: 0; 
+    width: 90%; 
+    max-width: 800px; 
+    border-radius: 20px; 
+    max-height: 90vh; 
+    overflow-y: auto; 
+}
+
+/* Additional Utility Classes */
+
+/* Button Hover Effects */
+.btn-primary {
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1e40af, #1e3a8a);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+}
+
+.btn-secondary {
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #3b82f6;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Form Input Styles */
+.form-input {
+    transition: all 0.3s ease;
+    border: 2px solid #e5e7eb;
+}
+
+.form-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    outline: none;
+}
+
+/* Section Spacing */
+.section-padding {
+    padding: 5rem 0;
+}
+
+/* Card Styles */
+.feature-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #f3f4f6;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Styles */
+.icon-circle {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.icon-blue {
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+    color: #1e40af;
+}
+
+.icon-green {
+    background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+    color: #166534;
+}
+
+.icon-purple {
+    background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
+    color: #7c3aed;
+}
+
+/* Navigation Styles */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #3b82f6;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: #3b82f6;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Stats Counter Animation */
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Course Category Cards */
+.course-category {
+    border-radius: 1.5rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    pointer-events: none;
+}
+
+.course-category:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+/* Placement Section Styles */
+.placement-bg {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3730a3 100%);
+    position: relative;
+}
+
+.placement-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+/* Company Logo Grid */
+.company-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.company-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.company-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+.footer-bg {
+    background: linear-gradient(135deg, #111827, #1f2937);
+}
+
+.social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: white;
+    font-weight: bold;
+}
+
+.social-icon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-gradient {
+        padding: 3rem 0;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+    
+    .company-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .section-padding {
+        padding: 3rem 0;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+    }
+    
+    .course-category {
+        padding: 1.5rem;
+    }
+}
+
+/* Loading Animation */
+.loading-spinner {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #f3f4f6;
+    border-top: 2px solid #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Scroll Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1e40af;
+}
+
+/* Selection Styles */
+::selection {
+    background: #3b82f6;
+    color: white;
+}
+
+::-moz-selection {
+    background: #3b82f6;
+    color: white;
+}
+
+/* Focus Styles for Accessibility */
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+    .modal,
+    .fixed,
+    button {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+}
