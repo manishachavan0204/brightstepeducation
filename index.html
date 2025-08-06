@@ -29,16 +29,16 @@
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center">
                     <div class="flex-shrink-0 flex items-center">
-                       
-                        <div class="flex items-center">
-    <img src="logo.png" alt="Brightstep Logo" class="h-14 w-auto mr-2" />
-    
-    <div class="ml-3">
-        <span class="text-2xl font-bold text-gray-800">Brightstep</span>
-        <span class="text-lg font-medium text-blue-600 block -mt-1">Education</span>
-    </div>
-</div>
-
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl flex items-center justify-center shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                                <path d="M9 12l2 2 4-4" stroke="white" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <div class="ml-3">
+                            <span class="text-2xl font-bold text-gray-800">Brightstep</span>
+                            <span class="text-lg font-medium text-blue-600 block -mt-1">Education</span>
+                        </div>
                     </div>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
@@ -47,9 +47,17 @@
                     <a href="#courses" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Courses</a>
                     <a href="#placement" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Placement</a>
                     <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Contact</a>
-                    <button onclick="getStartedEnquiry()" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors font-semibold">
-                        Get Started
-                    </button>
+                    <div class="flex items-center space-x-3">
+                        <button onclick="callCounsellor()" class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-colors font-semibold flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            Call Now
+                        </button>
+                        <button onclick="getStartedEnquiry()" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors font-semibold">
+                            Get Started
+                        </button>
+                    </div>
                 </div>
                 <div class="md:hidden">
                     <button class="text-gray-700 hover:text-blue-600">
@@ -83,6 +91,15 @@
                             Explore Courses
                         </button>
                     </div>
+                    <div class="mt-6">
+                        <button onclick="callCounsellor()" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition-colors shadow-lg flex items-center justify-center mx-auto">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            Speak with Counsellor - 9022330753
+                        </button>
+                        <p class="text-center text-blue-100 text-sm mt-2">Get instant career guidance • Available 9 AM - 8 PM</p>
+                    </div>
                     <div class="mt-12 grid grid-cols-3 gap-8">
                         <div class="text-center">
                             <div class="text-3xl font-bold text-yellow-300">500+</div>
@@ -101,15 +118,31 @@
                 <div class="relative">
                     <div class="animate-float">
                         <!-- Education Hero Image -->
-                       <div class="relative">
-    <div class="animate-float">
-        <div class="mb-8">
-            <img src="graduation.jpg" alt="Graduation Image" class="rounded-2xl shadow-2xl w-full h-64 object-cover">
-        </div>
-    </div>
-</div>
-
-                        <div class="bg-purple rounded-3xl p-8 shadow-2xl border border-gray-100">
+                        <div class="mb-8">
+                            <div class="w-full h-64 bg-gradient-to-br from-blue-100 to-indigo-200 rounded-2xl shadow-2xl border border-gray-100 flex items-center justify-center relative overflow-hidden">
+                                <!-- Education SVG Illustration -->
+                                <svg class="w-48 h-48 text-blue-600 opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                                </svg>
+                                <!-- Students Icons -->
+                                <div class="absolute top-4 left-4 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+                                    <span class="text-sm">👨‍🎓</span>
+                                </div>
+                                <div class="absolute top-4 right-4 w-8 h-8 bg-green-400 rounded-full flex items-center justify-center">
+                                    <span class="text-sm">👩‍🎓</span>
+                                </div>
+                                <div class="absolute bottom-4 left-8 w-8 h-8 bg-purple-400 rounded-full flex items-center justify-center">
+                                    <span class="text-sm">📚</span>
+                                </div>
+                                <div class="absolute bottom-4 right-8 w-8 h-8 bg-pink-400 rounded-full flex items-center justify-center">
+                                    <span class="text-sm">🎯</span>
+                                </div>
+                                <!-- Floating Elements -->
+                                <div class="absolute top-12 right-12 text-2xl animate-bounce">💡</div>
+                                <div class="absolute bottom-12 left-12 text-2xl animate-pulse">🚀</div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100">
                             <div class="text-center mb-6">
                                 <div class="w-20 h-20 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                                     <svg class="w-12 h-12 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
@@ -144,22 +177,21 @@
         </div>
     </section>
 
-   <!-- About Section -->
-<section id="about" class="py-20 bg-gray-100">
-  <div class="max-w-4xl mx-auto px-6">
-    <div class="bg-white rounded-3xl shadow-xl p-10 text-center border border-gray-200">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
-        About <span class="text-blue-600">Brightstep Education</span>
-      </h2>
-      <p class="text-lg text-gray-600 leading-relaxed">
-        Leading the way in transformative education with cutting-edge curriculum and industry partnerships.
-      </p>
-    </div>
-   <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Brightstep Education</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Leading the way in transformative education with cutting-edge curriculum and industry partnerships
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
                 <div>
                     <h3 class="text-3xl font-bold text-gray-900 mb-6">Our Story</h3>
                     <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-                        Founded in 2025 by a passionate team of young entrepreneurs and fresh industry professionals, Brightstep Education is an innovative startup born from a vision to revolutionize education. We believe that quality education should be accessible, practical, and career-focused for the new generation.
+                        Founded in 2024 by a passionate team of young entrepreneurs and fresh industry professionals, Brightstep Education is an innovative startup born from a vision to revolutionize education. We believe that quality education should be accessible, practical, and career-focused for the new generation.
                     </p>
                     <p class="text-gray-600 mb-8 text-lg leading-relaxed">
                         As a dynamic startup, we're building partnerships with leading companies and assembling a team of expert mentors to create India's most innovative EdTech platform for career transformation.
@@ -213,6 +245,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- Vision & Mission -->
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-600">
@@ -341,8 +374,8 @@
                                 </div>
                             </div>
                         </div>
-                        <button onclick="showPGPrograms()" class="w-full mt-6 bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
-                            Explore Postrgraduate Programs
+                        <button onclick="showPGPrograms()" class="w-full mt-6 bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors font-semibold">
+                            Explore Postgraduate Programs
                         </button>
                     </div>
 
@@ -387,7 +420,7 @@
                                 </div>
                             </div>
                         </div>
-                        < <button class="w-full mt-6 bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold">
+                        <button onclick="showProfessionalPrograms()" class="w-full mt-6 bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold">
                             Explore Professional Courses
                         </button>
                     </div>
@@ -489,9 +522,17 @@
                     <div class="bg-yellow-400 rounded-2xl p-8 text-center shadow-2xl">
                         <h4 class="text-2xl font-bold text-gray-900 mb-3">Ready to Transform Your Career?</h4>
                         <p class="text-gray-800 mb-6">Join 500+ successful students who've launched their dream careers</p>
-                        <button onclick="getStartedEnquiry()" class="bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition-colors shadow-lg">
-                            Start Your Journey Today
-                        </button>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <button onclick="callCounsellor()" class="bg-green-500 text-white px-6 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition-colors shadow-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                                Call Counsellor
+                            </button>
+                            <button onclick="getStartedEnquiry()" class="bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition-colors shadow-lg">
+                                Start Your Journey Today
+                            </button>
+                        </div>
                         <p class="text-sm text-gray-700 mt-4">Next batch starts in 5 days • Limited seats available</p>
                     </div>
                 </div>
@@ -821,6 +862,166 @@
         </div>
     </div>
 
+    <!-- PG Programs Modal -->
+    <div id="pgModal" class="modal">
+        <div class="modal-content">
+            <div class="bg-gradient-to-r from-purple-600 to-purple-800 text-white p-6 rounded-t-2xl">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-2xl font-bold">Postgraduate Programs</h2>
+                    <button onclick="closePGModal()" class="text-white hover:text-gray-200 text-2xl">&times;</button>
+                </div>
+            </div>
+            <div class="p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="gradient-border">
+                        <div class="gradient-border-inner p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">🎓 M.Tech / M.E.</h3>
+                            <p class="text-gray-600 mb-4">2-year advanced engineering programs</p>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Computer Science & Engineering</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Artificial Intelligence & ML</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Data Science & Analytics</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Cybersecurity</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Cloud Computing</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Software Engineering</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gradient-border">
+                        <div class="gradient-border-inner p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">💼 MBA (Online)</h3>
+                            <p class="text-gray-600 mb-4">2-year flexible online MBA program</p>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>General Management</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Marketing Management</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Finance Management</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Human Resource Management</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Operations Management</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Digital Marketing</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gradient-border">
+                        <div class="gradient-border-inner p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">🏢 MBA (Offline)</h3>
+                            <p class="text-gray-600 mb-4">2-year full-time campus MBA program</p>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Full-time Campus Experience</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Industry Internships</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Live Projects</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Corporate Mentorship</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Networking Events</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Placement Guarantee</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gradient-border">
+                        <div class="gradient-border-inner p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">🔬 M.Sc</h3>
+                            <p class="text-gray-600 mb-4">2-year advanced science programs</p>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Data Science</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Biotechnology</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Physics</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Chemistry</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Mathematics</div>
+                                <div class="flex items-center"><span class="text-purple-600 mr-2">•</span>Environmental Science</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <button onclick="applyPG()" class="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700 transition-colors font-semibold mr-4">
+                        Apply Now
+                    </button>
+                    <button onclick="closePGModal()" class="bg-gray-500 text-white px-8 py-3 rounded-lg hover:bg-gray-600 transition-colors font-semibold">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Professional Courses Modal -->
+    <div id="professionalModal" class="modal">
+        <div class="modal-content">
+            <div class="bg-gradient-to-r from-green-600 to-green-800 text-white p-6 rounded-t-2xl">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-2xl font-bold">Professional Courses</h2>
+                    <button onclick="closeProfessionalModal()" class="text-white hover:text-gray-200 text-2xl">&times;</button>
+                </div>
+            </div>
+            <div class="p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="gradient-border">
+                        <div class="gradient-border-inner p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">💻 Full Stack Development</h3>
+                            <p class="text-gray-600 mb-4">8-month intensive program with job guarantee</p>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>HTML, CSS, JavaScript</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>React.js & Node.js</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>MongoDB & Express.js</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>5+ Live Projects</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Portfolio Development</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Job Placement Support</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gradient-border">
+                        <div class="gradient-border-inner p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">📊 Data Science</h3>
+                            <p class="text-gray-600 mb-4">10-month comprehensive data science program</p>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Python Programming</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Machine Learning</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Deep Learning & AI</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Data Visualization</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Real Industry Projects</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Kaggle Competitions</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gradient-border">
+                        <div class="gradient-border-inner p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">📱 Digital Marketing</h3>
+                            <p class="text-gray-600 mb-4">6-month practical digital marketing course</p>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>SEO & SEM</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Social Media Marketing</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Google Ads & Facebook Ads</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Content Marketing</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Email Marketing</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Analytics & Reporting</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gradient-border">
+                        <div class="gradient-border-inner p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">🎨 UI/UX Design</h3>
+                            <p class="text-gray-600 mb-4">5-month design program with portfolio</p>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Figma & Adobe XD</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>User Research</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Wireframing & Prototyping</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Design Systems</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Portfolio Projects</div>
+                                <div class="flex items-center"><span class="text-green-600 mr-2">•</span>Industry Mentorship</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <button onclick="applyProfessional()" class="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold mr-4">
+                        Apply Now
+                    </button>
+                    <button onclick="closeProfessionalModal()" class="bg-gray-500 text-white px-8 py-3 rounded-lg hover:bg-gray-600 transition-colors font-semibold">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         // Modal functions
         function showUGPrograms() {
@@ -829,6 +1030,28 @@
 
         function closeUGModal() {
             document.getElementById('ugModal').style.display = 'none';
+        }
+
+        function showPGPrograms() {
+            document.getElementById('pgModal').style.display = 'block';
+        }
+
+        function closePGModal() {
+            document.getElementById('pgModal').style.display = 'none';
+        }
+
+        function showProfessionalPrograms() {
+            document.getElementById('professionalModal').style.display = 'block';
+        }
+
+        function closeProfessionalModal() {
+            document.getElementById('professionalModal').style.display = 'none';
+        }
+
+        // Call Counsellor function
+        function callCounsellor() {
+            // Direct phone call
+            window.location.href = 'tel:+919022330753';
         }
 
         // Get Started and Apply functions
@@ -872,6 +1095,48 @@ Looking forward to hearing from you soon!`;
             closeUGModal();
         }
 
+        function applyPG() {
+            const message = `Hi! I want to apply for the Postgraduate Programs at Brightstep Education.
+
+I'm interested in applying for:
+- M.Tech/M.E. Programs
+- MBA (Online) Programs  
+- MBA (Offline) Programs
+- M.Sc Programs
+
+Please guide me through the application process and share the admission requirements.
+
+Looking forward to hearing from you soon!`;
+
+            const whatsappNumber = '919022330753';
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+            
+            window.open(whatsappURL, '_blank');
+            closePGModal();
+        }
+
+        function applyProfessional() {
+            const message = `Hi! I want to apply for the Professional Courses at Brightstep Education.
+
+I'm interested in applying for:
+- Full Stack Development
+- Data Science  
+- Digital Marketing
+- UI/UX Design
+
+Please guide me through the application process and share the course details.
+
+Looking forward to hearing from you soon!`;
+
+            const whatsappNumber = '919022330753';
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+            
+            window.open(whatsappURL, '_blank');
+            closeProfessionalModal();
+        }
+
         function exploreCourses() {
             const message = `Hi! I would like to explore the courses offered by Brightstep Education.
 
@@ -897,9 +1162,18 @@ Thank you!`;
 
         // Close modal when clicking outside
         window.onclick = function(event) {
-            const modal = document.getElementById('ugModal');
-            if (event.target == modal) {
-                modal.style.display = 'none';
+            const ugModal = document.getElementById('ugModal');
+            const pgModal = document.getElementById('pgModal');
+            const professionalModal = document.getElementById('professionalModal');
+            
+            if (event.target == ugModal) {
+                ugModal.style.display = 'none';
+            }
+            if (event.target == pgModal) {
+                pgModal.style.display = 'none';
+            }
+            if (event.target == professionalModal) {
+                professionalModal.style.display = 'none';
             }
         }
 
@@ -1011,18 +1285,5 @@ Please contact this lead as soon as possible.`;
             });
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96a5d21ac6222e70',t:'MTc1NDM5MTk0MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96af1a5f85a889e1',t:'MTc1NDQ4OTI3My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
